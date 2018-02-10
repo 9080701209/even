@@ -8,6 +8,6 @@ int hours=0;
 time =130;
 minutes=time%60;
 hours=(time-minutes)/60;
-printf("total minutes%d= %d time and %d minutes\n",time,minute,hours);
+printf("total minutes%d= %d time and %d minutes\n",time,minutes,hours);
 return 0;
 }
