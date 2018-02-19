@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main()
 {
-	int a;
-	scanf("%d",&a);
-	while(a!=0)
+	int b;
+	scanf("%d",&b);
+	while(b!=0)
 	{
-		if(a%10==0)
+		if(b%10==0)
 	{
-			printf("%d",a);
+			printf("%d",b);
 			break;
 		}
-		a++;
+		b++;
 	}
 	return 0;
 }
