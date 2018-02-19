@@ -2,27 +2,27 @@
 
 int main()
 {
-	int n,i;
-	scanf("%d",&n);
-	if(n==0)
+	int a,i;
+	scanf("%d",&a);
+	if(a==0)
 	{
 		printf("enter valid input ");
 	}
-	else if(n==1)
+	else if(a==1)
 	{
 		printf("1 is neither prime nor composite");
 	}
 	else
 	{
-		for(i=2;i<=n;i++)
+		for(i=2;i<=a;i++)
 		{
-			if(n%i==0 & n!=i)
+			if(a%i==0 && a!=i)
 			{
 				printf("not prime");
 				break;
 				
 			}
-			 if(n%i==0 & n==i)
+			 if(a%i==0 && a==i)
 			 {
 			 	printf("prime");
 			 }
