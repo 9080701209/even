@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-	char a[10];
+	char s[10];
 	int i,flag=0,j;
-	scanf("%s",a);
-	for(i=0;a[i]!='\0';i++)
+	scanf("%s",&s);
+	for(i=0;s[i]!='\0';i++)
 	{
-		for(j=i+1;a[j]!=0;j++)
+		for(j=i+1;s[j]!=0;j++)
 		{
-			if(a[i]==a[j])
+			if(s[i]==s[j])
 			{
 				printf("no");
 				flag=1;
