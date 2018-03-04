@@ -1,19 +1,15 @@
 #include <stdio.h>
+
 int main()
 {
-    int a, revNumber = 0, remainder;
-
-    printf("Enter an integer: ");
-    scanf("%d", &a);
-
-    while(n != 0)
-    {
-        remainder = a%10;
-        reversedNumber = revNumber*10 + remainder;
-        a /= 10;
-    }
-
-    printf("Reversed Number = %d", revNumber);
-
-    return 0;
+	int n,n1,rev=0;
+	scanf("%d",&n);
+	while(n!=0)
+	{
+	n1=n%10;
+	rev=rev*10+n1;
+	n=n/10;
+	}
+	printf("%d",rev);
+	return 0;
 }
