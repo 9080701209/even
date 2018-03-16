@@ -1,27 +1,19 @@
-int main()
+#include <stdio.h>
+#include<conio.h>
+
+void main() 
+
 {
-	int i;
-	char str1[100];
-	scanf("%s",str1);
-	for(i=0;str1[i]!='\0';i++)
+	char s[50];
+	int i=0,n;
+	scanf("%[^\n]s",s);
+	n=strlen(s);
+	for(i=0;s[i]!='\0';i++)
 	{
-		if(i==0 )
-		{
-			if(str1[i]>='a' && str1[i]<='z')
-			{
-				str1[i]=str1[i]-32;
-				
-			}
-		}
-	          if(str1[i]==' ')
-		{
-			++i;
-			if(str1[i]>='a' && str1[i]<='z')
-			{
-				str1[i]=str1[i]-32;
-			}
-		}
+		if(i==0)
+			s[i]=toupper(s[i]);
+		if(s[i]==' ')
+			s[i+1]=toupper(s[i+1]);
 	}
-	printf("%s",str1);
-	return 0;
+	printf("\n%s",s);
 }
