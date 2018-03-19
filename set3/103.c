@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include<conio.h>
-
-void main() 
-
+#include<string.h>
+int main() 
 {
-	char s[50];
-	int i=0,n;
-	scanf("%[^\n]s",s);
-	n=strlen(s);
-	for(i=0;s[i]!='\0';i++)
-	{
-		if(i==0)
-			s[i]=toupper(s[i]);
-		if(s[i]==' ')
-			s[i+1]=toupper(s[i+1]);
-	}
-	printf("\n%s",s);
+	char n[100];
+    int a,i;
+    scanf("%[^\t\n]s",n);
+    a=strlen(n);
+    n[0]=n[0]-32;
+    for(i=0;i<a;i++)
+    {
+      if(n[i]==' ')
+      {
+          n[i+1]=n[i+1]-32;
+      }
+    }
+    printf("%s",n);
 }
